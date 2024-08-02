@@ -26,4 +26,13 @@ public function SignUp()
 
 }
 
+public function Happy()
+{
+    $binding = [
+        'title' => '註冊',
+    ];
+    return view( 'auth.happy' , $binding);
+
+}
+
 }
