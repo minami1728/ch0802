@@ -21,6 +21,7 @@ public function SignUp()
 {
     $binding = [
         'title' => '註冊',
+        'sub_title' => '歡迎光臨',
     ];
     return view( 'auth.signup' , $binding);
 
