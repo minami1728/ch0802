@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 class MerchandiseController extends Controller
 {
-    public function MerchandiseItemPage($merchandise_id)
+    public function MerchandiseItemPage()
     {
         return 1235456787868567;
     }
