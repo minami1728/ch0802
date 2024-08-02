@@ -17,4 +17,13 @@ class UserAuthController extends Controller
     }
 
 
+public function SignUp()
+{
+    $binding = [
+        'title' => '註冊',
+    ];
+    return view( 'auth.signup' , $binding);
+
+}
+
 }
