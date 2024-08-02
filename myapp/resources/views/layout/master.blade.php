@@ -1,6 +1,11 @@
 <html> 
     <head> 
-        <meta charset="utf-8"> <title>@yield('title') - Shop Laravel</title> 
+        <meta charset="utf-8">
+        <script src="/assets/js/jquery-2.2.4.min.js" defer></script> 
+        <script src="/assets/js/bootstrap.min.js" defer></script> 
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css"> 
+        <title>@yield('title') - Shop Laravel</title> 
     </head> 
     <body> 
         <header> 
