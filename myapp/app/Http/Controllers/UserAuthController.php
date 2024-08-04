@@ -8,7 +8,7 @@ class UserAuthController extends Controller
 {
     public function Login()
     {
-        return '123歡迎光臨';
+        return view( 'auth.login');
     }
 
     public function Profile($id)

@@ -25,7 +25,7 @@
 	<!-- Document Title
 	============================================= -->
 	<title>Login - Layout 3 | Canvas</title>
-	@yield('title')
+
 </head>
 
 <body class="stretched">
@@ -45,8 +45,8 @@
 						============================================= -->
 						<div id="logo">
 							<a href="index.html">
-								<img class="logo-default" srcset="images/logo.png, images/logo@2x.png 2x" src="images/logo@2x.png" alt="Canvas Logo">
-								<img class="logo-dark" srcset="images/logo-dark.png, images/logo-dark@2x.png 2x" src="images/logo-dark@2x.png" alt="Canvas Logo">
+								<img class="logo-default" srcset="{{asset('images/logo.png')}}, images/logo@2x.png 2x" src="images/logo@2x.png" alt="Canvas Logo">
+								<img class="logo-dark" srcset="{{asset('images/logo-dark.png')}}, images/logo-dark@2x.png 2x" src="images/logo-dark@2x.png" alt="Canvas Logo">
 							</a>
 						</div><!-- #logo end -->
 
@@ -69,8 +69,8 @@
 									<div class="top-cart-items">
 										<div class="top-cart-item">
 											<div class="top-cart-item-image">
-												<a href="#"><img src="images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt"></a>
-											</div>
+												<a href="#"><img src="{{asset('images/shop/small/1.jpg')}}" alt="Blue Round-Neck Tshirt"></a>
+											</div>"{{asset('images/shop/small/1.jpg')}}"
 											<div class="top-cart-item-desc">
 												<div class="top-cart-item-desc-title">
 													<a href="#">Blue Round-Neck Tshirt with a Button</a>
@@ -81,7 +81,7 @@
 										</div>
 										<div class="top-cart-item">
 											<div class="top-cart-item-image">
-												<a href="#"><img src="images/shop/small/6.jpg" alt="Light Blue Denim Dress"></a>
+												<a href="#"><img src="{{asset('images/shop/small/6.jpg')}}" alt="Light Blue Denim Dress"></a>
 											</div>
 											<div class="top-cart-item-desc">
 												<div class="top-cart-item-desc-title">
@@ -1716,96 +1716,7 @@
 			</div>
 		</section><!-- .page-title end -->
 
-		<!-- Content
-		============================================= -->
-		<section id="content">
-			<div class="content-wrap">
-				<div class="container">
-
-					<div class="accordion accordion-lg mx-auto mb-0" style="max-width: 550px;">
-
-						<div class="accordion-header">
-							<div class="accordion-icon">
-								<i class="accordion-closed fa-solid fa-lock"></i>
-								<i class="accordion-open bi-unlock"></i>
-							</div>
-							<div class="accordion-title">
-								Login to your Account
-							</div>
-						</div>
-						<div class="accordion-content">
-							<form id="login-form" name="login-form" class="row mb-0" action="#" method="post">
-								<div class="col-12 form-group">
-									<label for="login-form-username">Username:</label>
-									<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control">
-								</div>
-
-								<div class="col-12 form-group">
-									<label for="login-form-password">Password:</label>
-									<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control">
-								</div>
-
-								<div class="col-12 form-group">
-									<div class="d-flex justify-content-between">
-										<button class="button button-3d button-black m-0" id="login-form-submit" name="login-form-submit" value="login">Login</button>
-										<a href="#">Forgot Password?</a>
-									</div>
-								</div>
-							</form>
-						</div>
-
-						<div class="accordion-header">
-							<div class="accordion-icon">
-								<i class="accordion-closed bi-person"></i>
-								<i class="accordion-open bi-check-circle-fill"></i>
-							</div>
-							<div class="accordion-title">
-								New Signup? Register for an Account
-							</div>
-						</div>
-						<div class="accordion-content">
-							<form id="register-form" name="register-form" class="row mb-0" action="#" method="post">
-								<div class="col-12 form-group">
-									<label for="register-form-name">Name:</label>
-									<input type="text" id="register-form-name" name="register-form-name" value="" class="form-control">
-								</div>
-
-								<div class="col-12 form-group">
-									<label for="register-form-email">Email Address:</label>
-									<input type="text" id="register-form-email" name="register-form-email" value="" class="form-control">
-								</div>
-
-								<div class="col-12 form-group">
-									<label for="register-form-username">Choose a Username:</label>
-									<input type="text" id="register-form-username" name="register-form-username" value="" class="form-control">
-								</div>
-
-								<div class="col-12 form-group">
-									<label for="register-form-phone">Phone:</label>
-									<input type="text" id="register-form-phone" name="register-form-phone" value="" class="form-control">
-								</div>
-
-								<div class="col-12 form-group">
-									<label for="register-form-password">Choose Password:</label>
-									<input type="password" id="register-form-password" name="register-form-password" value="" class="form-control">
-								</div>
-
-								<div class="col-12 form-group">
-									<label for="register-form-repassword">Re-enter Password:</label>
-									<input type="password" id="register-form-repassword" name="register-form-repassword" value="" class="form-control">
-								</div>
-
-								<div class="col-12 form-group">
-									<button class="button button-3d button-black m-0" id="register-form-submit" name="register-form-submit" value="register">Register Now</button>
-								</div>
-							</form>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-		</section><!-- #content end -->
+        @yield('content') 
 
 		<!-- Footer
 		============================================= -->
@@ -1824,11 +1735,11 @@
 
 									<div class="widget">
 
-										<img src="images/footer-widget-logo.png" alt="Image" class="footer-logo">
-
+										<img src="{{asset('images/footer-widget-logo.png')}}" alt="Image" class="footer-logo">
+                                        
 										<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
 
-										<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+										<div style="background: url({{asset('images/world-map.png')}}) no-repeat center center; background-size: 100%;">
 											<address>
 												<strong>Headquarters:</strong><br>
 												795 Folsom Ave, Suite 600<br>
