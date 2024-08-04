@@ -29,10 +29,16 @@ public function SignUp()
 
 public function Happy()
 {
+    return view( 'auth.happy');
+
+}
+
+public function Cat()
+{
     $binding = [
         'title' => '註冊',
     ];
-    return view( 'auth.happy' , $binding);
+    return view( 'auth.cat' , $binding);
 
 }
 
