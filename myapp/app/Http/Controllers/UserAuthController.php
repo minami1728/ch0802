@@ -42,4 +42,13 @@ public function Cat()
 
 }
 
+public function Sign_Up()
+{
+    $binding = [
+        'title' => '註冊',
+    ];
+    return view( 'auth.sign_up' , $binding);
+
+}
+
 }
