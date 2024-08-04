@@ -51,4 +51,10 @@ public function Sign_Up()
 
 }
 
+public function Sign_UpProcess()
+{
+    $form_data = request()->all();
+        dd($form_data );
+}
+
 }
