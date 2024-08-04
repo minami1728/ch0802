@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Shop\Entity\User;
+use Hash;
 
 class UserAuthController extends Controller
 {
@@ -56,9 +57,11 @@ public function Sign_UpProcess()
 {
     $form_data = request()->all();
          // dd($form_data );
+         // $form_data['password'] = Hash::make($form_data['password']);
+         // $user = User::create($form_data);
          $user = User::create([
             'email' => $form_data['email'],
-            'password' => $form_data['password'],
+            'password' => Hash::make($form_data['password']),
             'type' => $form_data['type'],
             'nickname' => $form_data['nickname'],
          ]);
