@@ -53,19 +53,25 @@ public function Sign_Up()
 
 }
 
-public function Sign_UpProcess()
-{
+
+public function Sign_UpProcess(){
     $form_data = request()->all();
          // dd($form_data );
          // $form_data['password'] = Hash::make($form_data['password']);
          // $user = User::create($form_data);
-         $user = User::create([
-            'email' => $form_data['email'],
-            'password' => Hash::make($form_data['password']),
-            'type' => $form_data['type'],
-            'nickname' => $form_data['nickname'],
-         ]);
-         dd($user);
+         if ( $form_data['password'] == "" || $form_data['email'] == "" || $form_data['nickname'] == "" ) {
+            return redirect('/user/auth/sign_up')
+            ->withInput()
+            ->withErrors('資料不齊全');
+        }else{
+            $user = User::create([
+                'email' => $form_data['email'],
+                'password' => Hash::make($form_data['password']),
+                'type' => $form_data['type'],
+                'nickname' => $form_data['nickname'],
+            ]);
+            dd($user);
+        }
 }
 
 }
