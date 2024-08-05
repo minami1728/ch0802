@@ -17,6 +17,8 @@ Route::group(['prefix' => 'user'], function () {
         Route::get('profile/{id}', 'App\Http\Controllers\UserAuthController@Profile');
         Route::get('sign_up', 'App\Http\Controllers\UserAuthController@Sign_Up');
         Route::post('sign_up', 'App\Http\Controllers\UserAuthController@Sign_UpProcess'); 
+
+        Route::get('page', 'App\Http\Controllers\UserAuthController@Page');
     });
 });
 

@@ -24,6 +24,7 @@ class UserAuthController extends Controller
             session()->put('user_id', $user->id);
             session()->put('user_email', $user->email);
             # 導向到首頁
+            return redirect('/user/auth/page');
         }else{
             echo '登入失敗';
              # 導向到登入頁
@@ -109,6 +110,12 @@ public function Sign_UpProcess(){
     
             return redirect('/user/auth/login');
         }
+}
+
+public function Page()
+{
+    return view( 'auth.page');
+
 }
 
 }
