@@ -34,6 +34,12 @@ class UserAuthController extends Controller
         }
     }
 
+    public function SignOut()
+    {
+        session()->forget('user_id');
+        return redirect('/user/auth/login');
+    }
+
     public function Profile($id)
     {
         return 'my id :' . $id;
