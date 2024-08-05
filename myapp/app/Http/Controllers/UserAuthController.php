@@ -14,6 +14,12 @@ class UserAuthController extends Controller
         return view( 'auth.login');
     }
 
+    public function LoginProcess()
+    {
+        $form_data = request()->all();
+        dd($form_data);
+    }
+
     public function Profile($id)
     {
         return 'my id :' . $id;

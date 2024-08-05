@@ -9,6 +9,8 @@ Route::get('/', function () {
 Route::group(['prefix' => 'user'], function () {
     Route::group(['prefix' => 'auth'], function () {
         Route::get('login', 'App\Http\Controllers\UserAuthController@Login');
+        Route::post('login', 'App\Http\Controllers\UserAuthController@LoginProcess');
+
         Route::get('signup', 'App\Http\Controllers\UserAuthController@SignUp');  
         Route::get('happy', 'App\Http\Controllers\UserAuthController@Happy');
         Route::get('cat', 'App\Http\Controllers\UserAuthController@Cat');
