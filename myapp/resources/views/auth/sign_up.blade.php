@@ -9,18 +9,8 @@
 				<div class="container">
 
 					<div>
+					@include('components.errorMessage')
 
-						<div class="form-result">
-							@if($errors and count($errors))
-							<ul class="iconlist" data-username="envato" data-count="2">
-							@foreach($errors -> all() as $err )
-							<div class="alert text-center alert-danger">
-								{{$err}} 
-								</div>
-							@endforeach
-							</ul>
-							@endif
-						</div>
 						<div class="row">
 							<div class="col-lg-12">
 							<form action="/user/auth/sign_up" method="post" >
