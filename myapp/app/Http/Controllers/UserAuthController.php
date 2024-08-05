@@ -82,7 +82,7 @@ public function Sign_UpProcess(){
                 'nickname' => $form_data['nickname']
             ], function($message) use ($form_data) {
                 $message->to($form_data['email'], $form_data['nickname'])
-                ->from('gtaped14876@gmail.com')
+                ->from('ck6u35p@gmail.com')
                 ->subject('Laravel 8 Mail Test');
             });
     

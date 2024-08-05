@@ -62,7 +62,7 @@
 										</div>
 									</div>
 									<div class="col-12">
-									<button type="submit" class="btn btn-secondary">Register</button>
+									<button type="submit" class="btn btn-secondary">註冊</button>
 									</div>
 
 									<input type="hidden" name="prefix" value="event-registration-">
