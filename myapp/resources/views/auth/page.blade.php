@@ -7,6 +7,8 @@
 				<div class="container">
 					<div class="slider-caption slider-caption-center">
 						<h2 data-animate="fadeInUp">歡迎來到首頁</h2>
+						<br>
+						<a href="{{asset('merchandise/create')}}" class="btn btn-lg btn-light mx-auto"data-animate="fadeInUp">編輯商品</a>
 					</div>
 				</div>
 
