@@ -24,7 +24,7 @@
                             <td> {{ $Merchandise->id }}</td>
                             <td> {{ $Merchandise->name }}</td>
                             <td>
-                                <img src="{{ $Merchandise->photo }}" />
+                                <img src="{{asset( $Merchandise->photo) }}" />
                             </td>
                             <td>
                                 @if($Merchandise->status == 'C')
@@ -41,7 +41,7 @@
                             <td> {{ $Merchandise->remain_count }}</td>
                             <td>
                                 <a href="/merchandise/{{ $Merchandise->id }}/edit">
-                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    <i class="fas fa-band-aid"></i><!--編輯的按鈕-->
                                 </a>
                             </td>
                         </tr>
