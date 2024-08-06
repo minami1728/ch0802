@@ -24,7 +24,7 @@
                             <td> {{ $Merchandise->id }}</td>
                             <td> {{ $Merchandise->name }}</td>
                             <td>
-                                <img src="{{asset( $Merchandise->photo) }}" />
+                                <img src="{{ asset($Merchandise->photo) }}" width='100' height='100'/>
                             </td>
                             <td>
                                 @if($Merchandise->status == 'C')
