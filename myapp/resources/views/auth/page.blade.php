@@ -6,7 +6,7 @@
 
 				<div class="container">
 					<div class="slider-caption slider-caption-center">
-						<h2 data-animate="fadeInUp">歡迎來到畫布</h2>
+						<h2 data-animate="fadeInUp">歡迎來到首頁</h2>
 					</div>
 				</div>
 
