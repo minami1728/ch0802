@@ -18,6 +18,7 @@
                         <th>價格</th>
                         <th>庫存數量</th>
                         <th>編輯</th>
+                        <th>刪除</th>
                     </tr>
                     @foreach($MerchandisePaginate as $Merchandise)
                         <tr>
@@ -42,6 +43,11 @@
                             <td>
                                 <a href="/merchandise/{{ $Merchandise->id }}/edit">
                                     <i class="fas fa-band-aid"></i><!--編輯的按鈕-->
+                                </a>
+                            </td>
+                            <td>
+                                <a href="/merchandise/{{ $Merchandise->id }}/delete">
+                                    <i class="fas fa-band-aid"></i><!--刪除的按鈕-->
                                 </a>
                             </td>
                         </tr>

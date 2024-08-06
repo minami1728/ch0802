@@ -109,6 +109,7 @@
                         >
                     </div>
                     <button type="submit" class="btn btn-default">更新</button>
+                    <a href="/merchandise/manage" class="btn btn-default">商品管理</a>
                 </form>
             </div>
         </div>
